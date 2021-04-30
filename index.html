@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width = device-width, intial-scale=1.0">
+        <title>Web Design</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <h1>BP Pangsit Mie</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <img src="image/moon.png" id="darkIcon">
+                        </ul>
+                    </nav>
+                </div>
+                <div class="content">
+                    <h1><span>Tasty</span> Is <span>Me</span></h1>
+                    <p>Selamat datang pada Web Page BP Pangsit Mie Banyuwangi. Nikmati pengalaman menjelajah di web kami</p>
+
+                     <div class="btn-box">
+                         <button type="button" class="btn">Learn More</button>
+                         <button type="button" class="btn">Explore</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <img src="image/1.png" class="logo-icon">
+            <div class="social-links">
+                <img src="image/fb.png">
+                <img src="image/ig.png">
+                <img src="image/tw.png">
+            </div>
+        </div>
+            
+        <section class="home">
+            <h2>Our Web</h2>
+            <div class="row">
+            <div class="home-col">
+                <img src="image/k1.jpg">
+                <p>Kami menginfokan kembali kepada customer kami bahwa outlet kami buka setiap hari Rabu-Senin. Jam operasional kami pukul : 09:00-21:00. Writted by Fahrizal Akbar R. Date : 31 Maret 2021</p>
+            </div>
+            <div class="home-col">
+                <img src="image/k2.jpg">
+                <p>Quotes dari mimin kali ini adalah jangan gampang nyerah bisa jadi kalian udah 1 step lagi menuju kesuksesan. Capek boleh nyerah jangan. Writted by Fahrizal Akbar R. Date : 31 Maret 2021</p>
+            </div>
+            <div class="home-col">
+                <img src="image/k3.jpg">
+                <p>Segenap mimin dan karyawan yang bertugas mengucap mohon maaf sebesar besarnya kepada customer setia BP Pangsit Mie BWI. Writted by Fahrizal AKbar R. Date : 31 Maret 2021</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="profile">
+            <h2>Our CEO</h2>
+            <p>Mari lebih dekat dengan kami</p>
+                <div class="profile-col">
+                    <img src="image/profile.jpg">
+                    <h3>Fahrizal Akbar Ramadhan</h3>
+                    <p>Fahrizal Akbar Ramadhan merupakan CEO dari Fahri's web. Fahrizal lahir pada tanggal 14 Desember 2000 dikota Banyuwangi.<br> Fahrizal merupakan fresh graduate Universitas Muhammadiyah Malang jurusan Informatics engineering.<br> Beliau sangat ahli dibidang Science data dan Web developer yang handal.</p>
+                </div>
+        </section>
+
+        <section class="contact">
+            <h2>Address</h2>
+            <img src="image/map.png">
+            <div class="icon">
+                <i class="fa fa-home"><p>Jl. Semeru Banyuwangi</p></i>
+                <i class="fa fa-envelope"><p>abc@example.com</p></i>
+                <i class="fa fa-phone"><p>0812345678</p></i>
+            </div>
+        </section>
+        
+        <section class="footer">
+            <h2>About Us</h2>
+            <p>Kami tengah mencari freelance web developer yang dapat di kontrol kapanpun untuk menangani web kami.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+
+        <script>
+            var darkIcon = document.getElementById("darkIcon");
+
+            darkIcon.onclick =function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    darkIcon.src = "image/sun.png";
+                }else{
+                    darkIcon.src = "image/moon.png";
+                }
+            }
+        </script>
+                </section>
+                <section class="wrapper">
+                        <h1><span>Todo</span>List</h1>
+                            <div class="inputDiv">
+                               <input type="text" placeholder="Insert List">
+                               <button><i class="fas fa-plus"></i></button>
+                            </div>
+                            <ul class="toDoList">
+                                <li>Belajar Javascript<span><i class="fas fa-trash"></i></span></li>
+                                <li>Belajar React.js<span><i class="fas fa-trash"></i></span></li>
+                                <li>Belajar Kotlin<span><i class="fas fa-trash"></i></span></li>
+                            </ul>
+                        <div class="clear">
+                            <span>Anda memiliki 3 task</span>
+                            <button>Clear All</button>
+                        </div>
+                    <script src="script.js "></script>
+                </section>
+
+    </body>
+
+</html>
